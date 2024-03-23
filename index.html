@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>University Survey</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">University Survey</h1>
+    <p id="description">Survey</p>
+    <form id="survey-form">
+      <label id="name-label">Enter your name:<input placeholder="...Toha" id="name" type="text" required></label><br>
+      <label id="email-label">Enter your email:<input placeholder="...abs@gmail.com" id="email" type="email" required></label><br>
+      <label id="number-label">Enter your age:<input placeholder="15-100" id="number" type="number" min="15" max="100" required></label><br>
+      <label for="dropdown">Who are you?</label>
+      <select id="dropdown">
+        <option value="option1">Teacher</option>
+        <option value="option2">Student</option>
+      </select><br>
+
+      <label>Gender:<br>
+        <label for="opt1">M<input type="radio" id="opt1" name="opt" value="opt1" required></label>
+        <label for="opt2">F<input type="radio" id="opt2" name="opt" value="opt2"></label><br>
+      </label><br>
+
+      <label>What jobs do you have?<br>
+        <label for="check1">part-time<input type="checkbox" id="check1" name="check" value="o1"></label>
+        <label for="check2">full-time<input type="checkbox" id="check2" name="check" value="o2"></label>
+        <label for="check3">unemployed<input type="checkbox" id="check3" name="check" value="o3"></label><br>
+      </label><br>
+
+      <label for="comments">What is your hobby?</label><br>
+      <textarea id="comments" name="comments" rows="4" cols="100"></textarea><br>
+
+      <input id="submit" type="submit" value="Submit">
+    </form>
+  </body>
+</html>
